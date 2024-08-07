@@ -12,3 +12,8 @@
 
 /web/sites/*files/
 
+# Ignore Docker specific files and directories
+docker-compose.yml
+Dockerfile
+.env
+/db-data
