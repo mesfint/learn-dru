@@ -1,19 +1,34 @@
 /drush/contrib/
 /vendor/
+/composer.lock
 /web/core/
 /web/modules/contrib/
 /web/themes/contrib/
 /web/libraries/
 #Ignore local settings.local.php
 
+
+
+# Ignore Drupal files and directories
+/web/sites/*/files
+/web/sites/*/settings*.php
+/web/sites/*/services.yml
 /web/sites/*/settings.local.php
-
-#Ignore Drupal's file directory
-
-/web/sites/*files/
+/web/sites/*/default/settings.local.php
+/web/sites/*/default/services.local.yml
 
 # Ignore Docker specific files and directories
 docker-compose.yml
 Dockerfile
 .env
 /db-data
+
+
+# Ignore IDE and editor files
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+.DS_Store
