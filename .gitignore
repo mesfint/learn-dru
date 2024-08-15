@@ -31,4 +31,4 @@ Dockerfile
 *.bak
 *.tmp
 *.log
-.DS_Store
+.DS_Store   
